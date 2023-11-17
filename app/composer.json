@@ -1,0 +1,23 @@
+{
+    "name": "andersma/news-manager",
+    "description": "News manager web app",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Andersma\\NewsManager\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Mateusz Anders",
+            "email": "anders_mateusz@outlook.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=8.2",
+        "ext-pdo": "*",
+        "ext-pdo_mysql": "*"
+    }
+}

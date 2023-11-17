@@ -1,0 +1,19 @@
+services:
+  frankenphp:
+    build: .
+    env_file:
+      - franken.env
+    ports:
+      - "65090:65090"
+    volumes:
+      - ./app:/app
+  db:
+    image: mysql:latest
+    env_file:
+      - mysql.env
+    ports:
+      - "3306:3306"
+    volumes:
+      - db:/var/lib/mysql
+volumes:
+  db:
